@@ -43,7 +43,7 @@ function App() {
         <div className='d-flex align-items-center'>
           <div className='d-flex align-items-center me-4'>
           <input type='range' className='form-range me-2' id='lengthSlider' min={6} max={100} value={length} onChange={(e) => setLength(e.target.value)} style={{ width: '150px' }} />
-          <label htmlFor='lengthSlider' className='text-info'>
+          <label htmlFor='lengthSlider' className='text-danger'>
             Length: <strong>{length}</strong>
           </label>
           </div>
@@ -52,13 +52,13 @@ function App() {
           <input className='form-check-input' type='checkbox' defaultChecked={number} id="number" onChange={() => {
             setNumber((prev) => !prev);
           }} />
-          <label htmlFor='number' className='text-info'>Numbers</label>
+          <label htmlFor='number' className='text-danger'>Numbers</label>
         </div>
         <div className='form-check'>
           <input className='form-check-input' type='checkbox' defaultChecked={character} id="character" onChange={() => {
             setCharacter((prev) => !prev);
           }} />
-          <label htmlFor='character' className='text-info'>Characters</label>
+          <label htmlFor='character' className='text-danger'>Characters</label>
         </div>
       </div>
 </div>
